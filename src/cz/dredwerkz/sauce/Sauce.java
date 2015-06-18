@@ -1,4 +1,4 @@
-package sauce;
+package cz.dredwerkz.sauce;
 
 import javafx.application.Application;
 import javafx.scene.Group;
@@ -10,8 +10,9 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 /**
- * A simple web browser.
- * @author Jiri Prajzner <jprajzne@redhat.com>
+ * A simple, minimalistic web browser.
+ * @author Jiri Prajzner
+ * @web http://www.dredwerkz.cz
  */
 public class Sauce extends Application {
   String HOME_PAGE = "http://www.seznam.cz";
