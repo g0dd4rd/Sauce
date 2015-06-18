@@ -3,6 +3,7 @@ package cz.dredwerkz.sauce;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.web.WebEngine;
@@ -33,14 +34,13 @@ public class Sauce extends Application {
     WebView wv = new WebView();
     we = wv.getEngine();
     we.load(HOME_PAGE);
-    Group wwwPage = new Group(wv);
     
     bpLayout = new BorderPane();
     bpLayout.setTop(addressBar);
-    bpLayout.setCenter(wwwPage);
+    bpLayout.setCenter(wv);
     
     Scene scene = new Scene(bpLayout, WIDTH, HEIGHT);
-    
+      
     stage.setTitle("www.dredwerkz.cz - Sauce - @dr3dwerkz");
     stage.setScene(scene);
     stage.show();
