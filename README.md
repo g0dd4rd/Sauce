@@ -1,1 +1,3 @@
-# Sauce # A simple, minimalistic web browser
+# Sauce 
+
+A simple, minimalistic web browser
